@@ -76,15 +76,6 @@
             Заказать услугу
           </button>
         </div>
-        <div class="backdrop is-hidden" data-backdrop>
-          <div class="modal">
-            <button data-close-modal>
-              <svg class="icon-close" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
       </section>
       <!-- __________________________ПЕРЕВАГИ_____________________________ -->
       <section class="section features">
@@ -478,25 +469,17 @@
         </div>
       </div>
     </footer>
-    <script>
-      const refs = {
-        openModalBtn: document.querySelector('[data-open-modal]'),
-        closeModalBtn: document.querySelector('[data-close-modal]'),
-        backdrop: document.querySelector('[data-backdrop]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      refs.backdrop.addEventListener('click', logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle('is-hidden');
-      }
-
-      function logBackdropClick() {
-        console.log('Это клик в бекдроп');
-      }
-    </script>
+    <!-- _______________________________________MODAL_________________________________________ -->
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button type="button" data-close-modal>
+          <svg class="icon-close" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- __________________________________SKRIPT______________________________________________s -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
