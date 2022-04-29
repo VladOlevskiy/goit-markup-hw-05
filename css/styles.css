@@ -169,6 +169,9 @@ body {
 .clients-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients-link {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* ---------------------------------------------------------ХЕДЕР--------------------------------------------------------------------------- */
 .header {
@@ -516,6 +519,9 @@ body {
 .clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
+.clients-link:hover {
+  border: 1px solid var(--accent-color);
+}
 
 /* ---------------------------------------------------------------Футер--------------------------------------------------------------------- */
 
@@ -746,7 +752,7 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 1;
   pointer-events: none;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: inherit;
